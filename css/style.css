@@ -32,7 +32,7 @@ p {
 button {
   border: none;
 }
-/* .visually-hidden {
+.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -41,7 +41,7 @@ button {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-} */
+}
 .container {
   /* display: flex; */
   width: 1200px;
@@ -61,6 +61,12 @@ button {
   color: var(--accent-text-color);
 }
 /* Header */
+
+.header-adress-icon {
+  margin-right: 10px;
+  stroke: currentColor;
+}
+
 .header-primary {
   border-bottom: 1px solid var(--bottom-line);
 }
@@ -89,6 +95,7 @@ button {
   margin: 0 0 0 93px;
 }
 .header-menu-addr {
+  align-items: baseline;
   margin: 0 0 0 auto;
 }
 .header-list-item-stydia,
@@ -107,11 +114,13 @@ button {
 }
 .header-list-item-email,
 .header-list-item-tel {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color);
   text-decoration: none;
+  fill: var(--text-color);
 }
 
 /* Main */
